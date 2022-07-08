@@ -61,12 +61,17 @@ while (a < 10){
 }
 
 /* 9. Implement a loop that prints prime numbers to the console */
-
-for (let i = 2; i <= 10; i++){
-    if (i % 2 != 0){
-    console.log (i);
+const n = 10;
+  for (let i = 1; i <= n; i++) {
+    for (let j = 2; j <= i; j++) {
+      if (i % j === 0 && j < i) {
+        break;
+      } else if (j === i) {
+        console.log(i);
+      }
+    }
   }
-}
+
   /* 10. Implement a loop that prints odd numbers to the console */
   for (let i = 0; i <= 10; i++){
    if (i % 2 != 0){
@@ -75,4 +80,5 @@ for (let i = 2; i <= 10; i++){
   }
 
   
-
+ 
+  
