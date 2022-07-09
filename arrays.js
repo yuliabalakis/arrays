@@ -49,7 +49,7 @@ console.log(arrayOfEvenNumbers);
 /* 7. Write a function that takes two parameters - an array and a number and outputs 
 the index of an array element equal to a number */
 const checkArray = function(arr9, number){
-    console.log (arr9.findIndex(index => arr9.index == number));
+  console.log (arr9.findIndex(index => index == number));
 };
 checkArray([1,2,3], 2);
 
