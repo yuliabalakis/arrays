@@ -1,49 +1,49 @@
 /* 1. Given an array consisting of movie names, iterate over the array with 
 the output of the names of each movie to the console */
-let arr = ["film1", "film2", "film3"];
+const arr = ["film1", "film2", "film3"];
 for(let i = 0; i < arr.length; i++){
     console.log(arr[i]);
 }
 
 /* 2. Given an array of car manufacturers, convert the array to a string and back to an array */
-let arr1 = ["Toyota", "Kia", "Hyundai"];
-let str = arr1.join(',');
-let inv = str.split(',');
+const arr1 = ["Toyota", "Kia", "Hyundai"];
+const str = arr1.join(',');
+const inv = str.split(',');
 console.log (str);
 console.log(inv);
 
 /* 3. Given an array of the names of your friends, add the words hello to each element of the array */
-let arr2 = ["Maria", "Anton", "Anna"];
+const arr2 = ["Maria", "Anton", "Anna"];
 for(let i = 0; i < arr2.length; i++){
     console.log("Hello, ", arr2[i]);
 }
 
 /* 4. Convert numeric array to Boolean */
-let arr3 = [1, 0, 1];
+const arr3 = [1, 0, 1];
 for(let i = 0; i < arr3.length; i++){
 console.log(Boolean(arr3[i]));
 }
 
-let arr4 = [1, 0, 1];
+const arr4 = [1, 0, 1];
 type = Boolean(arr4[0]);
 type1 = Boolean(arr4[1]);
 type2 = Boolean(arr4[2]);
 console.log(type, type1, type2);
 
-let arr5 = [1, 0, 1];
-let x = arr5.map(function(currentValue){
+const arr5 = [1, 0, 1];
+const x = arr5.map(function(currentValue){
 return Boolean(currentValue)
 });
 console.log(x);
 
 /* 5. Sort the array [1,6,7,8,3,4,5,6] in descending order */
-let arr6 = [1,6,7,8,3,4,5,6];
-let descending = arr6.sort((a,b) => b - a);
+const arr6 = [1,6,7,8,3,4,5,6];
+const descending = arr6.sort((a,b) => b - a);
 console.log(descending);
 
 /* 6. Filter array [1,6,7,8,3,4,5,6] by value> 3 */
-let arr7 = [1,6,7,8,3,4,5,6];
-let arrayOfEvenNumbers = arr7.filter(currentNumber => currentNumber > 3);
+const arr7 = [1,6,7,8,3,4,5,6];
+const arrayOfEvenNumbers = arr7.filter(currentNumber => currentNumber > 3);
 console.log(arrayOfEvenNumbers);
 
 /* 7. Write a function that takes two parameters - an array and a number and outputs 
